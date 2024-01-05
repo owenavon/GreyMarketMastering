@@ -26,6 +26,29 @@ p.faq-answer {
     padding: 0rem 0;
 }
 
+.greymarket-logo {
+    width: 20%;
+}
+
+ul.service-list {
+    margin-top: 25px;
+}
+
+li.service-item {
+    list-style-type: none;
+    text-align: left;
+}
+
+.map {
+    height: 35em;
+}
+
+/*
+.dark-background {
+    background: #212529;
+}
+*/
+
 /* ------------------------ */
 /* ACCORDION                */
 /* ------------------------ */
@@ -39,7 +62,29 @@ p.faq-answer {
     border-radius: 25px;
     border-style: none;
     padding: 10px;
-    margin: 5px;
+    margin: 5px; 
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 1em 3.5em;
+    position: relative;
+    text-align: left;
+}
+
+.accordion-icon {
+    border: solid currentcolor;
+    color: #212529;
+    border-width: 0 2px 2px 0;
+    height: 0.9rem;
+    pointer-events: none;
+    position: absolute;
+    right: 2em;
+    top: 50%;
+    transform: translateY(-60%) rotate(45deg);
+    width: 0.9rem;
+}
+
+.accordion-trigger[aria-expanded="true"] .accordion-icon {
+    transform: translateY(-50%) rotate(-135deg);
 }
 
 h4.accordion-title {
@@ -11020,27 +11065,27 @@ hr.divider-light {
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
-    background-color: transparent;
+    background-color: #212529;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .navbar-brand:hover {
-    color: #fff;
+    color: #ffffff;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fff;
+    color: #ffffff;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
   }
   #mainNav.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
+    background-color: #ffffff;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #212529;
