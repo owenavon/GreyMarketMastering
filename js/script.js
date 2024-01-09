@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', event => {
-
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -49,6 +48,35 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+// Change album cover order upon page reload, and every 5 seconds.
+const getRandomNumber = (function() {
+    var nums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+    var current = [];
+    function rand(n) {
+        return (Math.random() * n)|0;
+    }
+    return function() {
+      if (!current.length) current = nums.slice();
+      return current.splice(rand(current.length), 1);
+    }
+}());
+
+const images = document.querySelectorAll('#gallery img');
+
+getRandomImages = () => {
+  const imagesNums = [];
+  for (let i = 1; i < 16; i++) {
+    imagesNums.push(getRandomNumber());
+  }
+
+  images.forEach((img, index) => {
+      img.src = `./assets/images/portfolio/thumbnails/${imagesNums[index]}.jpg`
+  })
+}
+
+setInterval(() => {
+   getRandomImages()
+}, 10000);
 
 // Accordion menu for "More" option
 class Accordion {
