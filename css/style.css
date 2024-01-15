@@ -43,6 +43,120 @@ li.service-item {
     height: 35em;
 }
 
+a.not-orange {
+    color: #212529;
+}
+
+a.not-orange:hover {
+    color: #fcd8c3;
+}
+
+h1.text-white {
+    font-family: 'Chivo Mono', monospace;
+}
+
+h2.text-white {
+    font-family: 'Chivo Mono', monospace;
+}
+
+h3.text-white {
+    font-family: 'Salsa', cursive;
+}
+
+h3.h4 {
+    font-family: 'Salsa', cursive;
+}
+
+/* ------------------------ */
+/* BOTTOM NAV               */
+/* ------------------------ */
+
+a.nav-link-bottom {
+    margin: 0px;
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.navbar-nav-bottom {
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: var(--bs-navbar-color);
+  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+  --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* ------------------------ */
+/* CLIENTS                  */
+/* ------------------------ */
+
+.names-columns {
+    padding: 0px 60px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    column-count: 4;
+    -moz-column-count: 4;
+    -moz-column-gap: 50px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 50px;
+    -moz-column-rule-color: #fff;
+    -moz-column-rule-style: solid;
+    -moz-column-rule-width: 0px;
+    -webkit-column-rule-color: #fff;
+    -webkit-column-rule-style: solid;
+    -webkit-column-rule-width: 0px; 
+}
+  
+@media screen and (min-width: 70em) {
+    .names-columns {
+        -moz-column-count: 6;
+        -webkit-column-count: 6;
+        -moz-column-gap: 25px;
+        -webkit-column-gap: 25px;
+        padding: 0px 20px;
+        column-count: 6; } 
+    }
+
+@media screen and (max-width: 48em) {
+    .names-columns {
+        column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-gap: 25px;
+        -webkit-column-gap: 25px;
+        padding: 0px 20px;
+        column-count: 2;
+        } 
+    }
+    .names-columns span:nth-of-type(odd) {
+        color: #f4623a; 
+    }
+    .names-columns span:nth-of-type(even) {
+        color: #212529;
+    }
+    .names-columns span:after {
+        display: block;
+        color: #ccc;
+        content: '|';
+        padding: 10px 5px 10px 0px; 
+    }
+    .names-columns.alt span:after {
+        display: block;
+        color: #ccc;
+        content: '';
+        padding: 10px 5px 10px 0px;
+    }
+
 /* ------------------------ */
 /* FADE ALBUM COVERS IN     */
 /* ------------------------ */
@@ -191,8 +305,6 @@ header .overlay {
         line-height: 75px;
     }
 }
-
-
 
 /* ------------------------ */
 /* THEME                    */
@@ -11025,6 +11137,10 @@ body {
 
 .page-section {
   padding: 8rem 0;
+}
+
+.page-section-bottom {
+  padding: 2rem 0;
 }
 
 .text-white-75 {
