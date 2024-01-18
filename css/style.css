@@ -28,6 +28,7 @@ p.faq-answer {
 
 .greymarket-logo {
     width: 20%;
+    border-radius: 5px;
 }
 
 ul.service-list {
@@ -37,10 +38,13 @@ ul.service-list {
 li.service-item {
     list-style-type: none;
     text-align: left;
+    color: #000000;
 }
 
 .map {
     height: 35em;
+    width: 100%;
+    border-radius: 10px;
 }
 
 a.not-orange {
@@ -51,21 +55,20 @@ a.not-orange:hover {
     color: #fcd8c3;
 }
 
+span {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*
+@font-face {
+    font-family: myFirstFont;
+    src: url("assets/fonts/helvetica_neue_medium.otf");
+}
+
 h1.text-white {
-    font-family: 'Chivo Mono', monospace;
+    font-family: myFirstFont;
 }
-
-h2.text-white {
-    font-family: 'Chivo Mono', monospace;
-}
-
-h3.text-white {
-    font-family: 'Salsa', cursive;
-}
-
-h3.h4 {
-    font-family: 'Salsa', cursive;
-}
+*/
 
 /* ------------------------ */
 /* BOTTOM NAV               */
@@ -78,6 +81,7 @@ a.nav-link-bottom {
     color: var(--bs-nav-link-color);
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .navbar-nav-bottom {
@@ -87,8 +91,8 @@ a.nav-link-bottom {
   --bs-nav-link-color: var(--bs-navbar-color);
   --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  flex-direction: row;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -8382,6 +8386,7 @@ textarea.form-control-lg {
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-body {
@@ -8391,7 +8396,14 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+    color: #ffffff !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-muted-black {
+  --bs-text-opacity: 1;
+    color: #000000 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-black-50 {
@@ -11136,11 +11148,29 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 10rem 0;
 }
 
-.page-section-bottom {
-  padding: 2rem 0;
+.page-section-images {
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+}
+
+.page-section-services {
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+}
+
+.page-section-clients {
+    padding: 5rem;
+}
+
+.page-section-contact {
+    padding: 6rem;
+}
+
+.page-section-faq {
+    padding: 5rem;
 }
 
 .text-white-75 {
