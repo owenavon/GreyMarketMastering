@@ -170,6 +170,8 @@ a.nav-link-bottom {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
+
  
 @keyframes fadeInAnimation {
     0% {
@@ -904,7 +906,9 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .img-thumbnail {
@@ -11148,7 +11152,8 @@ body {
 }
 
 .page-section {
-  padding: 10rem 0;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
 }
 
 .page-section-images {
