@@ -4,6 +4,12 @@
 /* UNORGANIZED              */
 /* ------------------------ */
 
+/*
+* {
+  outline: 1px solid red;
+}
+*/
+
 p.faq-answer {
     color: #000000;
     margin: 2em;
@@ -11176,6 +11182,10 @@ body {
 
 .page-section-faq {
     padding: 5rem;
+}
+
+.page-section-bottom {
+    padding 4rem;
 }
 
 .text-white-75 {
