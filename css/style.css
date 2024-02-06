@@ -10,6 +10,21 @@
 }
 */
 
+.bi-facebook:hover {
+    color: #212529 !important;
+    transition-duration: 0.5s;
+}
+
+.bi-instagram:hover {
+    color: #212529 !important;
+    transition-duration: 0.5s;
+}
+
+.bi-twitter:hover {
+    color: #212529 !important;
+    transition-duration: 0.5s;
+}
+
 p.faq-answer {
     color: #000000;
     margin: 2em;
@@ -35,6 +50,12 @@ p.faq-answer {
 .greymarket-logo {
     width: 20%;
     border-radius: 5px;
+}
+
+@media (max-width: 991px ) {
+.greymarket-logo {
+    display: none;
+    }
 }
 
 ul.service-list {
@@ -7973,7 +7994,7 @@ textarea.form-control-lg {
   margin-bottom: 0.5rem !important;
 }
 
-.mb-3 {
+.mb-5 {
   margin-bottom: 1rem !important;
 }
 

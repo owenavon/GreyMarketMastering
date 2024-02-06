@@ -48,36 +48,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-// Change album cover order upon page reload, and every 5 seconds.
-const getRandomNumber = (function() {
-    var nums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76];
-    var current = [];
-    function rand(n) {
-        return (Math.random() * n)|0;
-    }
-    return function() {
-      if (!current.length) current = nums.slice();
-      return current.splice(rand(current.length), 1);
-    }
-}());
-
-const images = document.querySelectorAll('#gallery img');
-
-getRandomImages = () => {
-  const imagesNums = [];
-  for (let i = 1; i < 77; i++) {
-    imagesNums.push(getRandomNumber());
-  }
-
-  images.forEach((img, index) => {
-      img.src = `./assets/images/portfolio/covers/${imagesNums[index]}.jpg`
-  })
-}
-
-setInterval(() => {
-   getRandomImages()
-}, 10000);
-
 // Accordion menu for "More" option
 class Accordion {
     constructor(domNode) {
@@ -130,3 +100,56 @@ const accordions = document.querySelectorAll('.accordion h2');
 accordions.forEach((accordionEl) => {
   new Accordion(accordionEl);
 });
+
+
+
+
+
+// Change album cover order upon page reload, and every 5 seconds.
+const getRandomNumber = (function() {
+    var nums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76];
+    var current = [];
+    
+//    console.log(nums.length);
+    
+    function rand(n) {
+        return (Math.random() * n)|0;
+    }
+    return function() {
+      if (!current.length) current = nums.slice();
+      return current.splice(rand(current.length), 1);
+    }
+}());
+
+const images = document.querySelectorAll('#gallery img');
+
+
+
+
+
+getRandomImages = () => {
+    
+    
+    
+    var y = getRandomNumber();
+    console.log(y.length);
+    
+    
+    
+  const imagesNums = [];
+  for (let i = 1; i < 77; i++) {
+    imagesNums.push(getRandomNumber());
+  }
+
+  images.forEach((img, index) => {
+      img.src = `./assets/images/portfolio/covers/${imagesNums[index]}.jpg`
+  })
+}
+
+
+
+
+
+setInterval(() => {
+   getRandomImages()
+}, 10000);
