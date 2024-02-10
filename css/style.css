@@ -10,6 +10,14 @@
 }
 */
 
+h1.large-main-font {
+    font-size: 55px;
+}
+
+p.large-font {
+    font-size: 18px;
+}
+
 .bi-facebook:hover {
     color: #212529 !important;
     transition-duration: 0.5s;
@@ -7782,6 +7790,9 @@ textarea.form-control-lg {
 
 .align-self-end {
   align-self: flex-end !important;
+    background-color: rgba(235, 235, 235, 0.7);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .align-self-center {
@@ -7790,6 +7801,9 @@ textarea.form-control-lg {
 
 .align-self-baseline {
   align-self: baseline !important;
+    background-color: rgba(235, 235, 235, 0.7);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .align-self-stretch {
