@@ -10,11 +10,9 @@
 }
 */
 
-/*
 h1.large-main-font {
-    font-size: 55px;
+   text-transform: capitalize; 
 }
-*/
 
 /*
 p.large-font {
