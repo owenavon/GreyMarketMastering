@@ -82,6 +82,12 @@ li.service-item {
     border-radius: 10px;
 }
 
+@media(max-width:768px) {
+    .map {
+        height: 20em;
+    }
+}
+
 a.not-orange {
     color: #212529;
 }
@@ -225,6 +231,7 @@ a.nav-link-bottom {
     padding: 1em 3.5em;
     position: relative;
     text-align: left;
+    width: 70%;
 }
 
 .accordion-icon {
@@ -245,7 +252,17 @@ a.nav-link-bottom {
 }
 
 h4.accordion-title {
-    margin: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:991px) {
+    h4.accordion-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1em;
+        padding: 0;
+    }
 }
 
 .accordion-title:hover {
@@ -1093,7 +1110,7 @@ progress {
 
 .col-7 {
   flex: 0 0 auto;
-  width: 58.33333333%;
+  width: 70%;
 }
 
 .col-8 {
@@ -1625,7 +1642,7 @@ progress {
   }
   .col-lg-7 {
     flex: 0 0 auto;
-    width: 58.33333333%;
+    width: 70%;
   }
   .col-lg-8 {
     flex: 0 0 auto;
@@ -11201,11 +11218,11 @@ body {
 }
 
 .page-section-contact {
-    padding: 6rem;
+    padding: 4rem;
 }
 
 .page-section-faq {
-    padding: 5rem;
+    padding: 3rem;
 }
 
 .page-section-bottom {
