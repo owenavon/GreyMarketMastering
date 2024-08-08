@@ -8493,6 +8493,13 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
+/*
+.test {
+    opacity: 0.3;
+    background-image: url('../assets/images/ddpplayer.jpg');
+}
+*/
+
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
