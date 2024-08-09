@@ -28,7 +28,7 @@ p.large-font {
     transition-duration: 0.5s;
 }
 
-.bi-twitter:hover {
+.bi-twitter-x:hover {
     color: #212529 !important;
     transition-duration: 0.5s;
 }
@@ -48,7 +48,6 @@ p.faq-answer {
 
 .page-spacer-two {
     padding: 1.5rem 0;
-    background-color:
 }
 
 .page-section-no-space {
@@ -8489,16 +8488,45 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+    opacity: 1;
+    background-color: #f4623a !important;
 }
 
-/*
-.test {
-    opacity: 0.3;
+.bg-primary-clients {
+  --bs-bg-opacity: 0.8;
+    background-image: url('../assets/images/portfolio/banners/speaker.png');
+    background-repeat: no-repeat;
+}
+
+.bg-primary-contact {
+  --bs-bg-opacity: 0.8;
+    background-image: url('../assets/images/portfolio/banners/desk.png');
+    background-repeat: no-repeat;
+}
+
+.bg-primary-faq {
+  --bs-bg-opacity: 0.8;
+    background-image: url('../assets/images/portfolio/banners/tape.png');
+    background-repeat: no-repeat;
+}
+
+.bg-primary-studio {
+  --bs-bg-opacity: 0.8;
+    background-image: url('../assets/images/portfolio/banners/effects.png');
+    background-repeat: no-repeat;
+}
+
+.bg-primary-ddpi {
+  --bs-bg-opacity: 0.8;
     background-image: url('../assets/images/ddpplayer.jpg');
 }
-*/
+
+.orange-overlay {
+    opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}
 
 .bg-secondary {
   --bs-bg-opacity: 1;
@@ -11208,6 +11236,12 @@ body {
 .page-section {
     padding-top: 8rem;
     padding-bottom: 6rem;
+}
+
+/*Prevents photo from spaning past colour region*/
+.page-section-banner {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
 }
 
 .page-section-images {
